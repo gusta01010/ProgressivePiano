@@ -192,7 +192,7 @@ def main():
         except ValueError:
             print("Invalid value. Please, enter a valid value.")
 
-    print("Programa encerrado.")
+    print("Program ended.")
 
 if __name__ == "__main__":
     main()
