@@ -1,9 +1,9 @@
 ![](https://files.catbox.moe/zu9uhw.png)
-<div style="text-align: center;">
+<p align="center">
 
-![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+<img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"/>
 
-</div>
+</p>
 
 ***
 Progressive Piano provides a modern way of playing virtual-piano based sheets on your computer keyboard, offering support for.txt sheets.
