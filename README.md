@@ -9,7 +9,7 @@
 Progressive Piano provides a modern way of playing virtual-piano based sheets on your computer keyboard, offering support for.txt sheets.
 
 # What is Progressive Piano?
-Progressive Piano (or PPiano for short) is an application with a clean user interface that allows you to interact with virtual piano sheets through your keyboard responses, making it usable for learning purposes.
+Progressive Piano (or PPiano for short) is an application with a clean user interface that allows you to interact with virtual piano sheets through your keyboard responses, making it usable for learning or entertainment purposes.
 
 # Branches
 Progressive Piano is being developed using a two-branch system to guarantee a clean acknowledgement of the functionality for all users.
