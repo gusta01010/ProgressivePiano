@@ -12,9 +12,10 @@ Progressive Piano provides a modern way of playing virtual-piano based sheets on
 Progressive Piano (or PPiano for short) is an application with a clean user interface that allows you to interact with virtual piano sheets through your keyboard responses, making it usable for learning purposes.
 
 # Branches
-Progressive Piano is being developed using a two-branch system to guarantee a clean acknowledgement of the functionality for all users.
+Progressive Piano is being developed using a two-branch system to guarantee a clean acknowledgement of the system functionality for all users.
 
-- `singlekey` - **Recommended for basic users.** This is the most stable and recommended branch, still in development.
+- `singlekey` - **Recommended for basic users.** This is the most stable and recommended branch.
+
 - `multikey` - **Not recommended for casual use.** This branch will have the latest features, still in development.
 
 # Questions or suggestions?
@@ -23,17 +24,27 @@ Feel free to send me a DM:
 - Discord: sonic_8783
 
 # Screenshots
-![](https://files.catbox.moe/urfl1v.png)
-![](https://files.catbox.moe/52ku0o.png)
+![](https://files.catbox.moe/99rma3.png)
+![](https://files.catbox.moe/fxlove.png)
 
 # Key Features
 - Advanced keypress progression
 - Simple controls for keyboard
 - Searches for .txt sheets at the current folder (same where .exe is located)
-- Friendly and simple UI based off a dark mode scheme to reduce eyestrain
-- Imperfect mode: Experimental feature, simulates humans mistakes when producing a note
+- A Friendly UI based off a dark mode scheme to reduce eyestrain
+- Imperfect mode: Simulates humans mistakes when producing a note
+- Highlights the current note to be played
+- Window pinning to help you read the sheet while playing
 
 # Commands
+
+|  Hotkey  | Action |
+| :--------| :----------: |
+| `-` | Produces a note (can be held) and progresses the sheet, making it ready to play the next note|
+| `;` | Returns to the beginning of the sheet  |
+
+
+# Commands (Old version)
 
 |  Hotkey  | Action |
 | :--------| :----------: |
