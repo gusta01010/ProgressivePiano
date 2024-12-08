@@ -16,7 +16,7 @@ Progressive Piano is being developed using a two-branch system to guarantee a cl
 
 - `singlekey` - **Recommended for basic users.** This is the most stable and recommended branch.
 
-- `multikey` - **Not recommended for casual use.** This branch will have the latest features, still in development.
+- `multikey` - **Not recommended for casual use.** This branch has experimental features.
 
 # Questions or suggestions?
 Feel free to send me a DM:
@@ -36,13 +36,20 @@ Feel free to send me a DM:
 - Highlights the current note to be played
 - Window pinning to help you read the sheet while playing
 
-# Commands
+# Commands (multikey)
+
+|  Hotkey  | Action |
+| :--------| :----------: |
+| `-` `+` `*` | Produces a note (can be held) and progresses the sheet, making it ready to play the next note|
+| `end` | Selects a random sheet in program folder or `.\Sheets\` folder (if available)  |
+| `,` `del` | Returns to the beginning of the sheet                  |
+
+# Commands (singlekey)
 
 |  Hotkey  | Action |
 | :--------| :----------: |
 | `-` | Produces a note (can be held) and progresses the sheet, making it ready to play the next note|
-| `;` | Returns to the beginning of the sheet  |
-
+| `,` `del` | Returns to the beginning of the sheet                  |
 
 # Commands (Old version)
 
