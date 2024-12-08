@@ -78,4 +78,4 @@ Feel free to open an issue on GitHub or send me a direct message on Discord:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` file for details.
+This project is licensed under the [MIT License](../LICENSE) - see the `LICENSE` file for details.
