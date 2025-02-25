@@ -72,7 +72,6 @@ Feel free to open an issue on GitHub or send me a direct message on Discord:
 
 ## Screenshots
 
-<!-- Host these images within your GitHub repository -->
 ![](https://files.catbox.moe/99rma3.png)
 ![](https://files.catbox.moe/fxlove.png)
 
