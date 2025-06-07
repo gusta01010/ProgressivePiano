@@ -47,7 +47,6 @@ class KeyboardSimulatorApp:
 
         self.master.geometry("600x400")
         self.master.resizable(False, False)
-        self.disable_physical = False
 
         self.imperfect_perfect_chord_chance = 0.05 # Chance de tocar acorde perfeito mesmo em imperfect_mode (era 0.15, ajustei para o valor do seu código)
         self.initial_max_imperfect_delay = 0.089   # O valor máximo inicial para o delay aleatório
@@ -255,41 +254,8 @@ class KeyboardSimulatorApp:
         self.status_label = tk.Label(control_frame, text=self.texts[self.language]['status_label'], 
                                      font=custom_font, fg="white", bg="#1a1a1a")
         self.status_label.grid(row=1, column=0, columnspan=3, pady=5)
-        self.disable_physical_var = tk.BooleanVar()
-        self.physical_check = tk.Checkbutton(control_frame, text="Teclado Virtual", 
-                                    variable=self.disable_physical_var,
-                                    command=self.toggle_physical_mode,
-                                    font=custom_font,
-                                    fg="white", bg="#1a1a1a", selectcolor="#555555",
-                                    activebackground="#1a1a1a", activeforeground="white")
-        self.physical_check.grid(row=0, column=4, padx=5, pady=5)
 
         
-
-    def toggle_physical_mode(self):
-        """Alterna entre modo físico e virtual com bloqueio permanente das hotkeys"""
-        self.disable_physical = self.disable_physical_var.get()
-        
-        hotkeys_to_block = [self.hotkey1, self.hotkey2, self.hotkey3]
-        
-        # Bloqueia permanentemente as hotkeys em ambos os modos
-        for hk in hotkeys_to_block:
-            keyboard.block_key(hk)
-            
-        if self.disable_physical:
-            # Libera teclas virtuais e limpa estado
-            for ctrl in self.control_keys.values():
-                for key in list(ctrl['active_keys']):
-                    self._release_virtual_key(key)
-            # Adiciona tratamento especial para o modo virtual
-            self.text_display.focus_set()  # Mantém foco na área de texto
-
-    def _release_virtual_key(self, key):
-        """Libera uma tecla virtualmente"""
-        try:
-            self.keyboard_controller.release(key)
-        except ValueError:
-            pass
 
     def toggle_file_selection(self):
         self.file_selection_mode = not self.file_selection_mode
@@ -626,8 +592,7 @@ class KeyboardSimulatorApp:
             # Release lock before further processing
             if is_pressed and (current_time - self.last_press_time) >= self.min_press_interval:
                 # Força liberação imediata da tecla hotkey no modo virtual
-                if self.disable_physical:
-                    keyboard.release(key_to_check)
+                keyboard.release(key_to_check)
                 # Offload to thread pool for multitasking
                 self.executor.submit(self.handle_key_press, control_key)
                 self.last_press_time = current_time
@@ -887,24 +852,12 @@ class KeyboardSimulatorApp:
                 # Timestamp is updated *inside* delayed_keypress after actual press simulation
 
     def _handle_key_action(self, key, press, release, control_key):
-        """Executa ação física/virtual de forma seletiva"""
-        # Atualiza estado interno sempre
-        if control_key:
-            if press:
-                self.control_keys[control_key]['active_keys'].add(key)
-            if release:
-                self.control_keys[control_key]['active_keys'].discard(key)
-        
-        # Envia apenas se estiver no modo físico e não for hotkey
-        if not self.disable_physical and key not in [self.hotkey1, self.hotkey2, self.hotkey3]:
-            if press:
-                self.keyboard_controller.press(key)
-            if release:
-                self.keyboard_controller.release(key)
-        # No modo virtual, atualiza apenas a interface
-        elif self.disable_physical:
-            self.highlight_current_element()
-            self.scroll_to_current_position()
+        """Execute key actions unconditionally."""
+        if press:
+            self.keyboard_controller.press(key)
+        if release:
+            self.keyboard_controller.release(key)
+        # No virtual mode branch; always simulate physical key actions
 
     def get_opposite_case(self, key):
         if key in self.shift_keys:
