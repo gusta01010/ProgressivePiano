@@ -18,7 +18,7 @@ with open(icon_path, 'wb') as icon_file:
     icon_file.write(icon_data)
 
 a = Analysis(
-    ['PPiano 2.0.0.py'],
+    ['PPiano 2.5.0.py'],
     pathex=['.'],
     binaries=[],
     datas=[],
