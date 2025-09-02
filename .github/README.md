@@ -36,7 +36,7 @@ Progressive Piano (or PPiano for short) is an application designed for learning 
 Progressive Piano offers two branches to cater to different user needs:
 
 *   **`main` (or `singlekey`):** The stable branch, recommended for most users. Provides a reliable and polished experience.
-*   **`multikey`:** The experimental branch, for users who want to try out the latest features (may have occasional bugs). This branch enables playing chords and simultaneous notes. **Warning: not all keys are mapped yet.**
+*   **`multikey`:** The experimental branch, for users who want to try out the latest features (may have occasional bugs). This branch enables playing chords and simultaneous notes.
 
 ## Commands
 
