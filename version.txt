@@ -17,12 +17,12 @@ VSVersionInfo(
                     [
                         StringStruct('CompanyName', 'Gustavo R. Lima'),
                         StringStruct('FileDescription', 'An advanced piano simulator for keyboard.'),
-                        StringStruct('FileVersion', '2.5.0'),
+                        StringStruct('FileVersion', '3.0.0'),
                         StringStruct('InternalName', 'PPiano'),
-                        StringStruct('LegalCopyright', 'Copyright (c) 2024 Gustavo R. Lima'),
+                        StringStruct('LegalCopyright', 'Copyright (c) 2025 Gustavo R. Lima'),
                         StringStruct('OriginalFilename', 'PPiano.exe'),
                         StringStruct('ProductName', 'PPiano'),
-                        StringStruct('ProductVersion', '2.5.0'),
+                        StringStruct('ProductVersion', '3.0.0'),
                     ]
                 )
             ]
