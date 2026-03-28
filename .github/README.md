@@ -43,19 +43,21 @@ Progressive Piano (or PPiano for short) is an application designed for learning 
 Progressive Piano offers two branches to cater to different user needs:
 
 *   **`main` (or `singlekey`):** The stable, classic branch. Provides a reliable and polished experience for single-note playback.
-*   **`multikey`:** The development branch, featuring the latest v3.0.0+ enhancements. This branch enables chords, simultaneous notes, and all advanced music theory features. Recommended for users who want to try the latest experimental features.
+*   **`multikey`:** The development branch, featuring the latest v4.0.0+ enhancements. This branch enables chords, simultaneous notes, and all advanced music theory features. Recommended for users who want to try the latest experimental features.
 
 ## Commands
 
-### Multikey Branch (`multikey` - v3.0.0)
+### Multikey Branch (`multikey` - v4.0.0)
 
 | Hotkey                      | Action                                                                                             |
 | :-------------------------- | :------------------------------------------------------------------------------------------------- |
 | `F1`, `F2`, `F3`, `F4`      | Controls playback of note groups (e.g., `[aceg]`), playing individual notes or the whole group.      |
+| `F5`                        | Plays Magic Harpejo                                                                                |
 | `Numpad *`, `+`, `-`        | Produces a note and progresses to the next note in the sheet.                                      |
 | `End`                       | Selects a random sheet from the application's directory or the `Sheets` folder.                      |
 | `Pause`                     | Toggles "Smart Release" mode for automatic note release.                                           |
 | `Page Up`                   | Toggles "Auto Bass" mode.                                                                          |
+| `Page Dn`                   | Toggles "Harmony" mode.                                                                            |
 | `del` `,` (comma)           | Returns to the beginning of the sheet.                                                             |
 
 ### Singlekey Branch (`main` or `singlekey`)
