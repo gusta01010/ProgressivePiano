@@ -30,6 +30,7 @@ Progressive Piano (or PPiano for short) is an application designed for learning 
     *   **Built-in File Browser:** Quickly browse and load `.txt` sheets.
 *   **`.txt` Sheet Support:** Loads `.txt` sheets from the application's directory or a dedicated `Sheets` subfolder.
 *   **Window Pinning:** Keeps the application window on top for easy sheet reading.
+*   **137 Sheets!**
 
 ## Installation and Usage
 
@@ -84,7 +85,7 @@ Feel free to open an issue on GitHub or send me a direct message on Discord:
 
 ## Screenshots
 
-*Note: Screenshots may be from an older version.*
+*Note: Screenshots are from an older version.*
 ![](https://files.catbox.moe/99rma3.png)
 ![](https://files.catbox.moe/fxlove.png)
 
